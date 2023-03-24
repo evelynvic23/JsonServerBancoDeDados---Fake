@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+
+        <h1>Login de Usuários - Banco de Dados - JsonServerNode.js</h1>
+
+    <!-- Para não atualizar a página devido enviar solicitação ao servidor  de uma requisição solicita. Usando o event.preventDefault -->
+    <form onsubmit="event.preventDefault() ; fazerLogin()">
+        <label>Nome:</label>
+        <input type="text" id="nome" required> <br> <br>
+        <label>Idade:</label>
+        <input type="number" id="idade" required>
+
+        <br>
+        <br>
+        <input type="submit" value="Entrar">
+    </form>
+
+    <h3>Ainda não é cadastrado? </h3>
+    <a href="cadastro.html">Cadastre-se</a>
+
+
+    <script src="login.js">
+
+    </script>
+    
+</body>
+</html>
